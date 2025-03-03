@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* Logo styling */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 100px;  /* Adjust size as needed */
+            height: auto;
+            margin-right: 20px;
+        }
+        .institution-name {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .course-details td {
+            text-align: left;
+        }
+        .time-table th {
+            background-color: #f2f2f2;
+        }
+        .faculty-cell {
+            background-color: #e6f3ff;
+        }
+        .course-details tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        .course-details th {
+            background-color: #4a90e2;
+            color: white;
+        }
+        .signatures {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .signature-block {
+            text-align: center;
+        }
+        .signature-line {
+            width: 200px;
+            border-top: 1px solid black;
+            margin-top: 50px;  /* Space for signature */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <!-- Replace 'logo.png' with your actual logo file name -->
+            <img src="logo.jpg" alt="Cambridge Institute of Technology Logo" class="logo">
+            <div class="institution-name">
+                <h2>CAMBRIDGE INSTITUTE OF TECHNOLOGY</h2>
+                <p>An Autonomous Institution</p>
+            </div>
+        </div>
+        <p>Affiliated to Visvesvaraya Technological University, Belagavi</p>
+        <p>Approved by AICTE, New Delhi & Govt. of Karnataka</p>
+        <h3>DEPARTMENT OF INFORMATION SCIENCE AND ENGINEERING</h3>
+        <p>TIME TABLE FOR SEM - IV SECTION C</p>
+    </div>
+
+    <!-- Main Timetable -->
+    <table class="time-table">
+        <tr>
+            <th>Day</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:15-12:15</th>
+            <th>12:15-1:15</th>
+            <th>1:45-2:45</th>
+            <th>2:45-3:45</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>CS232-MgB</td>
+            <td>CS201-JN</td>
+            <td>CS232-MgB</td>
+            <td>CS204-JKM</td>
+            <td>CS234(C1) KSN/KBS CS233(C2) KPS/AD</td>
+            <td>MC21-VOE</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>CS234-MG</td>
+            <td>CS232-MgB</td>
+            <td>CS201-JN</td>
+            <td>CS232-MgB</td>
+            <td>MC211-VOE</td>
+            <td>MS21-KSG/KS/DG/VOE/SS</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>CS201-JN</td>
+            <td>CS201-BRK</td>
+            <td>MC211-VOE</td>
+            <td>CS234-GDL</td>
+            <td>CS233(C1) TBA/KPS CS233(C2) MS/MgB</td>
+            <td>MOOC</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>MC211-VOE</td>
+            <td>CS234-JKM</td>
+            <td>CS233(C1) SWR/KPS</td>
+            <td>CS234-MS</td>
+            <td>CS234-MS</td>
+            <td>MC210-GRK</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>CS201-JN</td>
+            <td>MC211-VOE</td>
+            <td>MC211-GRK</td>
+            <td>CS234-MS</td>
+            <td>CS234-JKM</td>
+            <td>Mini-Project</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td colspan="6">WEEKLY CALENDAR OF EVENTS</td>
+        </tr>
+    </table>
+
+    <!-- Course Details Table -->
+    <table class="course-details">
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th class="faculty-header">Faculty Name</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th class="faculty-header">Faculty Name</th>
+        </tr>
+        <tr>
+            <td>CS201</td>
+            <td>Applied Mathematics IV</td>
+            <td class="faculty-cell">Ms. Vimaladrevi C R (VCR)</td>
+            <td>CS231</td>
+            <td>Finite Automata and Formal Language</td>
+            <td class="faculty-cell">Ms. Jayalaxmi N (JN)</td>
+        </tr>
+        <tr>
+            <td>CS232</td>
+            <td>Analysis and Design of Algorithms Laboratory</td>
+            <td class="faculty-cell">Ms. Megha Sharma (MgS)</td>
+            <td>CS234</td>
+            <td>Database – Programming and Interfacing</td>
+            <td class="faculty-cell">Ms. Rajani P (RP)</td>
+        </tr>
+        <tr>
+            <td>CS233</td>
+            <td>Analysis and Analysis of Algorithms Laboratory</td>
+            <td class="faculty-cell">Dr. Megha Sharma (MgS)<br>Ms. Sabeena K (SK)</td>
+            <td>HU123</td>
+            <td>Universal Human Values and Life Skills</td>
+            <td class="faculty-cell">Ms. Geethika S Kumar (GSK)</td>
+        </tr>
+        <tr>
+            <td>CS234</td>
+            <td>Microprocessor & Microcontrollers Laboratory</td>
+            <td class="faculty-cell">Dr. Jayanthi K G (JKG)</td>
+            <td>BC239</td>
+            <td>Brand Community and Partnership</td>
+            <td class="faculty-cell">Ms. Geetha K Kumar (GRK)</td>
+        </tr>
+        <tr>
+            <td>CS233</td>
+            <td>Microprocessor & Microcontrollers Laboratory</td>
+            <td class="faculty-cell">Dr. Jayanthi K G (JKG)<br>Ms. Kumuda S (KS)</td>
+            <td colspan="3" class="faculty-cell">
+                OE21 - Phase 2<br>
+                Universal Education (PE) Option-3 Advance)<br>
+                Yoga for a Better Life - Phase 2
+            </td>
+        </tr>
+        <tr>
+            <td>CS234</td>
+            <td>Web Programming</td>
+            <td class="faculty-cell">Dr. Vimaladrevi C R (VCR)<br>Dr. Saravanan D (SD)<br>Ms. Kumudavalli (KV)</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="signatures">
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <p>HOD Signature</p>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <p>Professor and HOD<br>Dept. of Information Science & Eng.</p>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line"></div>
+            <p>Principal Signature</p>
+        </div>
+    </div>
+</body>
+</html>
